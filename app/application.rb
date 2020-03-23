@@ -8,7 +8,7 @@ class Application
     # binding.pry
     if req.path=="/items/"
       #  binding.pry
-      resp.write @@items.price
+      resp.write items.price
 
     # #
     # elsif req.path!="/items/"
