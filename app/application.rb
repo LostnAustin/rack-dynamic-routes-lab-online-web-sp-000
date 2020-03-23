@@ -11,8 +11,8 @@ class Application
       name = req.path.split("items/")[1]
 
       if item = @@items.find{|item| item.name == name }
-      # resp.write "items".split(",")
 
+      resp.write item.price
       resp.write "Item not found"
       resp.status = 400
       item
