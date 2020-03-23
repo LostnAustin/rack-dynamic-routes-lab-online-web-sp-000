@@ -8,7 +8,7 @@ class Application
     binding.pry
     if req.path=="/items/".include?("items")
       #  binding.pry
-      resp.write @@items.price
+    
 # "/items/fake".include?("items")
     # #
     # elsif req.path!="/items/"
