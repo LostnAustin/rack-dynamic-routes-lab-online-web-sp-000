@@ -8,7 +8,7 @@ class Application
     # binding.pry
     if req.path=="/items/".include?("items")
       #  binding.pry
-
+      resp.write "/items/".split(",")
 # "/items/fake".include?("items")
     # #
     # elsif req.path!="/items/"
