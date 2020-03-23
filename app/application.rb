@@ -6,12 +6,10 @@ class Application
     resp = Rack::Response.new
     req = Rack::Request.new(env)
     # binding.pry
-    if req.path=="/items/Figs"
+    if req.path=="/items/"
       #  binding.pry
-      resp.write @@items[0].price
+      resp.write @@items.price
 
-    elsif req.path=="/items/Pears"
-      resp.write @@items[1].price
     # #
     # elsif req.path!="/items/"
     #   resp.write "Item not found"
