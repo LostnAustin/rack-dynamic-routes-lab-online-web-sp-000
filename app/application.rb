@@ -9,7 +9,8 @@ class Application
     if req.path.include?("items")
       #  binding.pry
       name = req.path.split("items/")[1]
-        
+
+      if @@items.find{|item| item.name == name }
       # resp.write "items".split(",")
 # "/items/fake".include?("items")
     # #
