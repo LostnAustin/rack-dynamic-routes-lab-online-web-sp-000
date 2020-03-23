@@ -12,7 +12,7 @@ class Application
 
     elsif req.path=="/items/Pears"
       resp.write @@items[1].price
-    # 
+    #
     # elsif req.path!="/items/"
     #   resp.write "Item not found"
     #   resp.status = 400
