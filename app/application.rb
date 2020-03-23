@@ -10,14 +10,12 @@ class Application
       #  binding.pry
       name = req.path.split("items/")[1]
 
-      if @@items.find{|item| item.name == name }
+      if item = @@items.find{|item| item.name == name }
       # resp.write "items".split(",")
-# "/items/fake".include?("items")
-    # #
-    # elsif req.path!="/items/"
-    #   resp.write "Item not found"
-    #   resp.status = 400
 
+      resp.write "Item not found"
+      resp.status = 400
+      item
   else
      resp.write "Route not found"
       resp.status = 404
