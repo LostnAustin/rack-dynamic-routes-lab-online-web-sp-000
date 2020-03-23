@@ -8,7 +8,7 @@ class Application
     binding.pry
     if req.path=="/items/".include?("items")
       #  binding.pry
-    
+      
 # "/items/fake".include?("items")
     # #
     # elsif req.path!="/items/"
