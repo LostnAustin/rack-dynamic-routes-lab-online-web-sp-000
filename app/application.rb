@@ -6,9 +6,11 @@ class Application
     resp = Rack::Response.new
     req = Rack::Request.new(env)
     # binding.pry
-    if req.path=="/items/".include?("items")
+    if req.path.include?("items")
       #  binding.pry
-      resp.write "/items/".split(",")
+      name = req.path.split("items/")[1]
+        
+      # resp.write "items".split(",")
 # "/items/fake".include?("items")
     # #
     # elsif req.path!="/items/"
